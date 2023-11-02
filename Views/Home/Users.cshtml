@@ -1,0 +1,17 @@
+@model List<User>;
+@{
+    ViewData["Title"] = "Usuarios";
+}
+<h1>@ViewData["Title"]</h1>
+<style>
+    ul.no-bullets {
+        list-style-type: none;
+    }
+</style>    
+<ul class="no-bullets">
+    @foreach (var user in Model)
+    {
+        <li>ID: @user.Id, Nombre: @user.Name, Apellido: @user.LastName </li>
+    }
+    
+</ul>

@@ -1,0 +1,18 @@
+@model int []
+@{
+    ViewData["Title"] = "Números Page";
+}
+<style>
+    ul.no-bullets {
+        list-style-type: none;
+    }
+</style>
+<div class="text-center border">
+    <h1 class="display-4">Números</h1>
+    <ul class="no-bullets">
+        @foreach (var numero in Model)
+        {
+            <li>@numero</li>
+        }
+    </ul>
+</div>

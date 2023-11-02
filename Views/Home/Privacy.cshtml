@@ -1,0 +1,16 @@
+﻿@model User;
+@{
+    ViewData["Title"] = "Usuario";
+}
+<h1>@ViewData["Title"]</h1>
+<style>
+    ul.no-bullets {
+        list-style-type: none;
+    }
+</style>    
+<ul class="no-bullets">
+    <li>ID: @Model.Id</li>
+    <li>Nombre: @Model.Name @Model.LastName</li>
+    <li>Apellido:@Model.LastName</li>
+    <!-- Otras propiedades de usuario si es necesario -->
+</ul>
